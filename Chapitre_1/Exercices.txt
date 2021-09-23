@@ -1,0 +1,15 @@
+1 : Écrire un script qui permet d'afficher les 10 premiers termes (avec le calcul) 
+    de la table de multiplication par 3.
+
+2 : Écrire un scripte qui affiche les 20 premiers termes de la table de multiplication par 7, 
+    en signalant au passage (a l’aide d’une astérisque) ceux qui sont des multiples de 3. 
+    Exemple : 7 14 *21 28 35 *42 49 ...
+
+3 : La suite de Fibonacci est une suite dont chaque termes est égales au deux derniers (1 1 2 3 5 8 13…). 
+    Écrire un script qui affiche les 15 premiers termes de la suite
+
+4 : Écrire un script qui convertit 1.827.499.540 secondes en nombre 
+    d’années – mois – jours – heures - minutes - secondes
+
+5 : Trouver sur internet la légende de Sissa, 
+    écrire un scripte qui donne le nombre total de grains de riz ainsi que sa masse total.
