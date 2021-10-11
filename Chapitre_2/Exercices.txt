@@ -1,0 +1,24 @@
+1 : Écrire un script qui permet à l'utilisateur d'introduire des nombres 
+    et qui les additionne au fur et à mesure. Le script s'arrête lorsque 
+    l'utilisateur introduit un nombre négatif. A ce moment l'ordinateur affiche la somme.
+
+2 : Écrire un script avec la liste de nombres nb=[15,89,5,99,23,78,12,33,68,16].
+    Trouver et afficher le maximum de la liste, 
+    calculer la moyenne global, 
+    afficher les cotes supérieures à 30 et dire combien il y en a. 
+
+3 : Écrire un script qui permet à l'utilisateur d'introduire le nombre d'ordinateurs qu'il
+    désire dans son réseau ainsi que le numéro d'ordre du premier ordinateur. 
+    Le programme constitue alors deux listes. 
+    Celle des noms des ordinateurs et celle des adresses Ip. 
+    Exemple avec 5 ordinateurs et que le numéro d'ordre du premier est égal à 14 : 
+        liste_ordi=['ordi14','ordi15','ordi16',...,'ordi18'] 
+        liste_ip=['192.168.0.14', '192.168.0.15', '192.168.0.16',...,'192.168.0.18'] 
+    /!\ l'adresse 192.168.0.0 ainsi 192.168.0.255 ne peuvent être utilisée, 
+    et bien entendu on ne peut aller au delà de 192.168.0.254 adresse ip maximale dans un réseau de classe C.
+
+4 : Écrire un script qui permet d'introduire un mot et qui teste s'il s'agit d'un palindrome.
+
+5 : Écrire un script qui permet à l'utilisateur de valider ou non un choix. Quelle que soit la façon dont
+    l'utilisateur écrit la réponse (O / Oui / oui / OUI... -  N / Non / NON... )
+
