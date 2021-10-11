@@ -18,7 +18,13 @@
     /!\ l'adresse 192.168.0.0 ainsi 192.168.0.255 ne peuvent être utilisée, 
     et bien entendu on ne peut aller au delà de 192.168.0.254 adresse ip maximale dans un réseau de classe C.
 
-4 : Écrire un script qui permet d'introduire un mot et qui teste s'il s'agit d'un palindrome.
+4 : Écrire un script qui permet à l'utilisateur de créer une liste avec autant de prénom qu'il le souhaite, 
+    pour ensuite afficher les élément avec leur index.
+    Une fois cette liste créé, permettre à l'utilisateur de, au choix : 
+        Supprimer un élément à partir de l'index ou du prénom, 
+        ajouter un autre prénom, 
+        trier la liste par ordre alphabétique.
+    Afficher ensuite la liste modifiée soit totalement soit une partie en spécifiant la range d'index.
 
 5 : Écrire un script qui permet à l'utilisateur de valider ou non un choix. Quelle que soit la façon dont
     l'utilisateur écrit la réponse (O / Oui / oui / OUI... -  N / Non / NON... )
