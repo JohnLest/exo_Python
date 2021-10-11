@@ -1,11 +1,12 @@
 1 : Écrire un script qui permet à l'utilisateur d'introduire des nombres 
     et qui les additionne au fur et à mesure. Le script s'arrête lorsque 
-    l'utilisateur introduit un nombre négatif (sans le calculer). A ce moment l'ordinateur affiche la somme.
+    l'utilisateur introduit un nombre négatif (sans le calculer). À ce moment l'ordinateur affiche la somme.
 
-2 : Écrire un script avec la liste de nombres nb=[15,89,5,99,23,78,12,33,68,16].
+2 : Écrire un script avec la liste de nombres nb=[15, 89, 5, 99, 23, 78, 12, 33, 68, 16].
     Trouver et afficher le maximum de la liste, 
     calculer la moyenne global, 
-    afficher les cotes supérieures à 30 et dire combien il y en a. 
+    afficher les cotes supérieures à 30 et dire combien il y en a.
+    Ensuite, trier la liste par ordre croissant.
 
 3 : Écrire un script qui permet à l'utilisateur d'introduire le nombre d'ordinateurs qu'il
     désire dans son réseau ainsi que le numéro d'ordre du premier ordinateur. 
