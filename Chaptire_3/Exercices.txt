@@ -1,0 +1,20 @@
+1 : Écrire un programme qui permet d'enregistrer une liste d'utilisateur. 
+    Pour chaque utilisateur il y aura le nom, l'age et la date de naissance.
+        La date de naissance doit être un tuple d'entiers, 
+        mais s'afficher sous le format 'jj-MMM-aaaa' (01-Jan-1999).
+    Créer une fonction qui permet de : 
+        enregistrer un nouvel utilisateur, 
+        parcourir tous les utilisateur, 
+        récupérer un utilisateur via un ID (utiliser les index).
+    Le programme ne se termine qu'une fois que l'utilisateur a appuyé sur 'q'.
+
+2 : Reprendre la suite de Fibonacci (Chap 1 Ex 3) et l'adapter dans une fonction récursive.
+
+3 : Écrire un programme qui calcul la distance entre deux points (x, y)
+    à l'aide d'une fonction lambda.
+        Rappel distance entre 2 points : racine carré de ((x2 - x1)² + (y2 - y1)²) 
+        Rappel racine carré de 1 = 1 exp 0.5
+
+4 : Écrire une fonction qui nous renvois l'index d'une liste si on donne ça valeur.
+    Si la liste ne contient pas la valeur, renvoyer -1, 
+    si la liste contient plusieurs fois la même valeur renvoyer tous les index.
