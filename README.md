@@ -6,7 +6,7 @@ Le fichier Exercices.txt donne les énnoncés et les fichiers python donnent les
 Le chapitre un à pour but de travailler les bases comme la boucle `while`, `if.. else..` et travailler les données.
 
 ## Chapitre 2
-Le chapitre deux travail principalement les entrées au clavier ainsi que les listes. On y voit aussi la boucle `for` et les modifications de chaînes de caractères. 
+Le chapitre deux travaille principalement les entrées au clavier ainsi que les listes. On y voit aussi la boucle `for` et les modifications de chaînes de caractères. 
 
 ## Chapitre 3
 En cours d'écriture
