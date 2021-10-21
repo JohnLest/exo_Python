@@ -4,7 +4,7 @@
 #   mais s'afficher sous le format 'jj-MMM-aaaa' (01-Jan-1999).
 # Créer une fonction qui permet de : 
 #   enregistrer un nouvel utilisateur, 
-#   parcourir tous les utilisateur, 
+#   parcourir tous les utilisateurs, 
 #   récupérer un utilisateur via un ID (utiliser les index).
 # Le programme ne se termine qu'une fois que l'utilisateur a appuyé sur 'q'.
 
