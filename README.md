@@ -9,7 +9,7 @@ Le chapitre un à pour but de travailler les bases comme la boucle `while`, `if.
 Le chapitre deux travaille principalement les entrées au clavier ainsi que les listes. On y voit aussi la boucle `for` et les modifications de chaînes de caractères. 
 
 ## Chapitre 3
-Le chapitre trois travaille les `dict()` ainsi que les `tuple`. Une fois que toutes les structures de données sont vue, on s'attaque aux fonction ainsi qu'au `try.. catch..`
+Le chapitre trois travaille les `dict()` ainsi que les `tuple`. Une fois que toutes les structures de données sont vues, on s'attaque aux fonctions ainsi qu'au `try.. catch..`
 
 ## Chapitre 4
 En cours d'écriture
