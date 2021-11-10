@@ -8,10 +8,10 @@
 #    /!\ l'adresse 192.168.0.0 ainsi 192.168.0.255 ne peuvent être utilisée, 
 #    et bien entendu on ne peut aller au delà de 192.168.0.254 adresse ip maximale dans un réseau de classe C.
 
-nbrOrdi = int(input("Combien d'ordinateur y a t'il a initialiser? ")) # On demande combien de machine on veut sur notre réseau
+nbr_ordi = int(input("Combien d'ordinateur y a t'il a initialiser? ")) # On demande combien de machine on veut sur notre réseau
 demarrage = int(input("À partir de quel numéro faut-il démarrer? ")) # et quel numéro porte la première machine.
 
-if(demarrage + nbrOrdi >= 255): # Si le nombre de machine plus le numéro de démmarage dépasse les 255 c'est qu'on va trop loins.
+if(demarrage + nbr_ordi >= 255): # Si le nombre de machine plus le numéro de démmarage dépasse les 255 c'est qu'on va trop loins.
     print("Il y a une erreur car on dépasse le range autorisé (254)")
 elif(demarrage <= 0) : # Et bien sur  on vérifie qu'on part bien de 1 ou plus 
     print("La valeur de de démarrage doit être min 1")
@@ -19,7 +19,7 @@ else : # si tout est bon,
     liste_ordi = [] # on initialise la liste des ordinateurs
     liste_ip = [] # et des addresses IP.
 
-    for ordi in range(nbrOrdi): # Pour chaque ordinateur, 
+    for ordi in range(nbr_ordi): # Pour chaque ordinateur, 
         liste_ordi.append(f"ordi{demarrage + ordi}") # on ajoute le nom de l'ordinateur, 
         liste_ip.append(f"192.168.0.{demarrage + ordi}") # et l'addresse IP. 
 

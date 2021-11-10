@@ -9,26 +9,26 @@
 # Le programme ne se termine qu'une fois que l'utilisateur a appuyé sur 'q'.
 
 def main():
-    usersList = createUserList()
-    if (usersList == -1): # Si la création de la liste a planté 
+    users_list = create_user_list()
+    if (users_list == -1): # Si la création de la liste a planté 
         return # on s'arrête là.
 
     while True : 
-        choix = printMenu() # On propose à l'utilisateur une liste de choix 
+        choix = print_menu() # On propose à l'utilisateur une liste de choix 
         if(choix == "1"): 
-            newUser = addUser()
-            if(newUser != -1): # Si l'enregistrement à fonctionné
-                usersList.append() # on l'inclus dans la usersList[]
+            new_user = add_user()
+            if(new_user != -1): # Si l'enregistrement à fonctionné
+                users_list.append() # on l'inclus dans la users_list[]
         elif(choix == "2"):
-            parcourList(usersList)
+            parcour_list(users_list)
         elif(choix == "3"):
-            chooseUser(usersList)
+            choose_user(users_list)
         elif(choix.lower() == "q"):
             break
         else:
             print(f"le choix : {choix} n'est pas reconnu par le système")
 
-def printMenu():
+def print_menu():
     """ Fonction qui permet à l'utilisateur de choisir une des options """
     menu = """Que voulez vous faire? 
     1 - Ajouter un user à la liste
@@ -38,7 +38,7 @@ def printMenu():
     """
     return input(menu)
 
-def mapDate(annee, mois, jour):
+def map_date(annee, mois, jour):
     """ Fonction qui permet de transformer ma date tuple en date String """
     try:
         ret = -1 # Par défaut la valeur ret est égal à -1
@@ -62,23 +62,23 @@ def mapDate(annee, mois, jour):
         print(f"{type(ex).__name__} Erreur dans les dates")
     return (ret) # On retrourne la valeur de ret
 
-def createUserList():
+def create_user_list():
     """ Fonction qui permet de créer une liste de users """
-    usersListe = []
+    users_liste = []
     print("Bienvenue dans la gestion d'utilisateur.")
     try:
         nbrList = int(input("Combien d'utilisateurs voulez vous inscrire : "))
         for i in range(nbrList): 
-            usersListe.append(addUser()) # On ajoute le nouvel utilisateur créé à la liste
+            users_liste.append(add_user()) # On ajoute le nouvel utilisateur créé à la liste
     except ValueError: # On gêre si l'utilisateur n'a pas donné un Integer
         print("Merci de donner une valeur numérique non null")
-        usersListe = createUserList() # Si c'est le cas on recommence la création de usersListe 
+        users_liste = create_user_list() # Si c'est le cas on recommence la création de users_liste 
     except Exception as ex : # On gêre les éventuelles autres erreurs
         print(f"{type(ex).__name__} Erreur dans la création de la liste")
         return -1
-    return (usersListe) # On retourne la liste des users 
+    return (users_liste) # On retourne la liste des users 
 
-def addUser():
+def add_user():
     """ Cette fonction sert à créer un dictionnaire d'utilisateur """
     perso = dict()
     try:
@@ -88,32 +88,32 @@ def addUser():
         annee = int(input("\tannée : "))
         mois = int(input("\tmois : "))
         jour = int(input("\tjour : "))
-        if(mapDate(annee, mois, jour) != -1): # On vérifie que la date donnée est valide
+        if(map_date(annee, mois, jour) != -1): # On vérifie que la date donnée est valide
             perso["nom"] = nom
             perso["age"] = age
             perso["date"] = (jour, mois, annee)
         else : # sinon on recommence 
-            perso = addUser()
+            perso = add_user()
     except ValueError: # On verifie que l'utilisateur a bien donné des Integers quand on lui a demandé
         print("Erreur dans l'attribution des données ")
-        perso = addUser()
+        perso = add_user()
     except Exception as ex : # On gêre les éventuelles autres erreurs
         print(f"{type(ex).__name__} Erreur dans la création de l'utilisateur")
         return -1
     return (perso)
 
-def parcourList(usrLst):
+def parcour_list(usrLst):
     """ Cette fonction permet de parcourir la liste de tous les utilisateurs """
     for ind, user  in enumerate(usrLst): # On utilise enumarate pour obtenir l'index qui sert d'ID 
         print(f"Voici les données pour le user ID {ind} : ")
-        getUser(user) # On appelle la fonction qui va lire le dictionnaire user 
+        get_user(user) # On appelle la fonction qui va lire le dictionnaire user 
     return
 
-def chooseUser(usersList):
+def choose_user(users_list):
     """ Cette fonction permet de choir un user à partir de son ID """
     try:
-        idUser = int(input("Quel est l'ID de l'utilisateur à sortir? "))
-        getUser(usersList[idUser]) # On envoie le dictionnaire choisi par l'utilisateur
+        id_user = int(input("Quel est l'ID de l'utilisateur à sortir? "))
+        get_user(users_list[id_user]) # On envoie le dictionnaire choisi par l'utilisateur
     except ValueError: # On gêre si l'utilisateur a bien donné un Integer
         print("Merci de donner un ID valide")
     except IndexError: # On gêre si c'est bien un index valide
@@ -122,11 +122,11 @@ def chooseUser(usersList):
         print(f"{type(ex).__name__} Erreur dans la lecture des donées")
     return
 
-def getUser(user):
+def get_user(user):
     """ Cette fonction lit les données présentes dans le dictionnaire user """
     for clef, val in user.items():
         if(clef == "date"): # Si la clef est une date il faut la mapper pour sortir une chaine de caractères
-            val = (mapDate(val[2], val[1], val[0]))
+            val = (map_date(val[2], val[1], val[0]))
         print(f"\t{clef} : {val}")
     return
 
